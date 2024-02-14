@@ -22,8 +22,8 @@ jobs:
     - name: Run Flawfinder
       run: flawfinder ./ > test.txt
     - name: Upload Artifact
-        uses: actions/upload-artifact@v4
-        with:
+      uses: actions/upload-artifact@v4
+      with:
           name: my-artifact # NOTE: same artifact name
           path: test.txt
       
