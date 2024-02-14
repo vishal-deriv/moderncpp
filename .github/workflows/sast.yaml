@@ -20,4 +20,4 @@ jobs:
     - name: Install Flawfinder
       run: pip install flawfinder
     - name: Run Flawfinder
-      run: flawfinder ./
+      run: flawfinder ./ --context
