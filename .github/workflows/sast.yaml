@@ -20,4 +20,10 @@ jobs:
     - name: Install Flawfinder
       run: pip install flawfinder
     - name: Run Flawfinder
-      run: flawfinder ./ --context
+      run: flawfinder ./ > test.txt
+    - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: my-artifact # NOTE: same artifact name
+          path: test.txt
+      
