@@ -4,6 +4,13 @@
 <table>
 <tr>
     <td align="center">
+        <a href="https://github.com/vishal-deriv">
+            <img src="https://avatars.githubusercontent.com/u/107232432?v=4" width="100;" alt="vishal-deriv"/>
+            <br />
+            <sub><b>vishal-deriv</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/alandefreitas">
             <img src="https://avatars.githubusercontent.com/u/5369819?v=4" width="100;" alt="alandefreitas"/>
             <br />
