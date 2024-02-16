@@ -12,9 +12,9 @@ jobs:
   flawfinder-analysis:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
     - name: Set up Python 3.x
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@871daa956ca9ea99f3c3e30acb424b7960676734
       with:
         python-version: '3.x'
     - name: Install Flawfinder
@@ -22,7 +22,7 @@ jobs:
     - name: Run Flawfinder
       run: flawfinder --csv ./ > test.csv
     - name: Upload Artifact
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@ef09cdac3e2d3e60d8ccadda691f4f1cec5035cb
       with:
           name: my-artifact # NOTE: same artifact name
           path: test.csv
